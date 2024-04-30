@@ -90,33 +90,49 @@ public class The1 {
                 The_10();
                 break;
 
+            case 11:
+                The_11();
+                break;
+
+            case 12:
+                The_12();
+                break;
+
+            case 13:
+                The_13();
+                break;
+
+            case 14:
+                The_14();
+                break;
+
         }
 
     }
 
     public void The_1() {
-        long sum_1 = 0;
+        long sum = 0;
 
         System.out.println("For the start, The first 5 Perfect numbers are 6, 28, 496, 8128, and 33550336.");
         System.out.println("Please enter your number: ");
-        long the_number1 = input.nextLong();
+        long the_number = input.nextLong();
 
-        for (int i = 1; i < the_number1; i++) {
-            if ((the_number1 % i) == 0) {
-                sum_1 = sum_1 + i;
+        for (int i = 1; i < the_number; i++) {
+            if ((the_number % i) == 0) {
+                sum = sum + i;
 
             }
 
         }
-        if (sum_1 == the_number1 && sum_1 != 0) {
+        if (sum == the_number && sum != 0) {
 
-            System.out.println("the " + the_number1 + " is a perfect number.\n");
+            System.out.println("the " + the_number + " is a perfect number.\n");
 
-        } else if (sum_1 == 0) {
+        } else if (sum == 0) {
             System.out.println("the 0 is not a perfect number\n");
 
         } else {
-            System.out.println("the " + the_number1 + " is not a perfect number.\n");
+            System.out.println("the " + the_number + " is not a perfect number.\n");
         }
 
     }
@@ -294,13 +310,79 @@ public class The1 {
 
     public void The_11(){
 
+        System.out.println("Please enter the first number: ");
+        int num1 = input.nextInt();
+        System.out.println("Please enter the second number: ");
+        int num2 = input.nextInt();
+        System.out.println("How many number do you want? ");
+        int the_number = input.nextInt();
+
+
+        for (int i = 0; i < the_number; i++) {
+
+            System.out.print(num1 + " ");
+
+            int num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+        }
+        System.out.println("\n");
 
 
     }
 
     public void The_12(){
 
+        System.out.println("How many number do you want? ");
         int the_number = input.nextInt();
+        int num1 = 0, num2 = 1, num3 = 1, num4 = 2;
+
+        for (int i = 0; i < the_number; i++) {
+
+            System.out.print(num1 + "\n");
+
+            int num5 = num1 + num2 + num3 + num4;
+            num1 = num2;
+            num2 = num3;
+            num3 = num4;
+            num4 = num5;
+
+        }
+    }
+
+    public void The_13(){
+
+        int sum = 0, f_number;
+        boolean prime = false;
+        System.out.println("Enter the number and get the second number: ");
+        int the_number = input.nextInt();
+
+        for (int i = 2; i < the_number; i++) {
+
+            if (the_number % i == 0) {
+                sum += i;
+
+            }
+
+        }
+
+        if (sum == 0){
+            prime = true;
+        }
+
+        if (prime){
+
+            f_number = the_number + 2;
+
+            System.out.println("[" + the_number + "," + f_number + "]");
+        }
+        else {
+            System.out.println("The number you enter is not a prime number.\n");
+        }
+
+    }
+
+    public void The_14(){
 
 
 
