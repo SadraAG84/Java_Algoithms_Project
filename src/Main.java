@@ -13,6 +13,5 @@ public class Main {
         StartMenu s = new StartMenu();
         s.startmenu();
 
-
     }
 }

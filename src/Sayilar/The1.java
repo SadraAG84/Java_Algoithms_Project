@@ -106,6 +106,30 @@ public class The1 {
                 The_14();
                 break;
 
+            case 15:
+                The_15();
+                break;
+
+            case 16:
+                The_16();
+                break;
+
+            case 17:
+                The_17();
+                break;
+
+            case 18:
+                The_18();
+                break;
+
+            case 19:
+                The_19();
+                break;
+
+            case 20:
+                The_20();
+                break;
+
         }
 
     }
@@ -384,8 +408,99 @@ public class The1 {
 
     public void The_14(){
 
+        System.out.println("Please enter the number you want to check: ");
+        double the_number = input.nextDouble();
+
+        double f_number = Math.pow(2, the_number) * the_number - 1;
+
+        System.out.println("The result is " + f_number + "\n");
+
+    }
+
+    public void The_15(){
+
+        System.out.println("Please enter the number you want to check: ");
+        double the_number = input.nextDouble();
+
+        double f_number = Math.pow(2, the_number) - 1;
+
+        System.out.println("The result is " + f_number + "\n");
+
+    }
+
+    public void The_16(){
+
+        int sum = 0;
+        System.out.println("Please enter the number you want to check: ");
+        int the_number = input.nextInt();
+
+        if (the_number > 0) {
+
+            for (int i = the_number; i > 0; i /= 10) {
+                sum += i % 10;
+            }
+
+            if (the_number % sum == 0) {
+                System.out.println("The number" + the_number + "is a Harshad number.\n");
+            }
+
+        }
+        else {
+            System.out.println("You can not check the number which are lower or equal to '0'\n");
+        }
+    }
+
+    public void The_17(){
 
 
+
+    }
+
+    public void The_18(){
+
+        System.out.println("404 not found!!\n");
+
+    }
+
+    public void The_19(){
+
+        bagdasik_1_19.main();
+
+    }
+
+    public void The_20(){
+
+        int last_digit, sum = 0, second_num, sum_2 = 0;
+
+        System.out.println("Please enter the number you want to check: ");
+        int the_number = input.nextInt();
+        second_num = the_number;
+
+
+
+
+        while (sum_2 != 6174){
+
+            sum_2 = the_number - second_num;
+            the_number = sum_2;
+            sum_2 = reversing(sum_2);
+            sum_2 = the_number - sum_2;
+
+        }
+        System.out.println(sum_2);
+
+
+    }
+
+    public static int reversing(int number){
+
+        int last_digit, sum = 0, second_num;
+
+        for (; number != 0; number /= 10) {
+            last_digit = number % 10;
+            sum = ((sum * 10) + last_digit);
+        }
+        return sum;
     }
 
 }
