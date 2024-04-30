@@ -30,7 +30,7 @@ public class The1 {
         System.out.println("18) Tav Sayılar");
         System.out.println("19) Bağdaşık Sayılar (Amicable)");
         System.out.println("20) 6174 sayısı");
-        
+
 
         cases();
     }
@@ -289,6 +289,20 @@ public class The1 {
 
             System.out.println("The number" + the_number + "is not Rich number.\n");
         }
+
+    }
+
+    public void The_11(){
+
+
+
+    }
+
+    public void The_12(){
+
+        int the_number = input.nextInt();
+
+
 
     }
 
