@@ -30,7 +30,7 @@ public class The1 {
         System.out.println("18) Tav Sayılar");
         System.out.println("19) Bağdaşık Sayılar (Amicable)");
         System.out.println("20) 6174 sayısı");
-        System.out.println("hello");
+        
 
         cases();
     }
