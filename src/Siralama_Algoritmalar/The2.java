@@ -1,11 +1,15 @@
 package Siralama_Algoritmalar;
 
+import java.util.Collections;
 import java.util.Scanner;
 
+import static java.util.Arrays.sort;
+
 public class The2 {
+    Scanner input = new Scanner(System.in);
 
     public void S2_menu() {
-        Scanner input = new Scanner(System.in);
+
 
         System.out.println("1 - Eklemeli Sıralama (Insertion Sort)");
         System.out.println("2 - Seçmeli Sıralama (Selection Sort)");
@@ -40,12 +44,12 @@ public class The2 {
             case 2:
                 // selectionSort();
                 System.out.println("Seçmeli Sıralama seçildi.");
-                secmeliSiralama();
+                The_2();
                 break;
             case 3:
                 // bubbleSort();
                 System.out.println("Kabarcık/Baloncuk Sıralama seçildi.");
-                bubbleSort();
+                The_3();
                 break;
             case 4:
                 // divideAndConquerSort();
@@ -58,6 +62,8 @@ public class The2 {
             case 6:
                 // mergeSort();
                 System.out.println("Birleştirme Sıralama seçildi.");
+
+                The_6();
                 break;
             case 7:
                 // quickSort();
@@ -70,10 +76,12 @@ public class The2 {
             case 9:
                 // heapSort();
                 System.out.println("Yığınlama Sıralama seçildi.");
+                The_9();
                 break;
             case 10:
                 // radixSort();
                 System.out.println("Taban Sıralama seçildi.");
+                The_10();
                 break;
             case 11:
                 // shakerSort();
@@ -125,95 +133,92 @@ public class The2 {
 
 
     public void The_1() {
-        System.out.println("Eklemelisiralama sudurbudur");
-        Scanner klavye = new Scanner(System.in);
-        System.out.println("Dizi boyutunu girin:");
-        int boyut = klavye.nextInt();
-        int[] dizi = new int[boyut];
-        System.out.println("Dizinin elemanlarini girin:");
-        for (int i = 0; i < boyut; i++) {
-            dizi[i] = klavye.nextInt();
+        System.out.println("Eklemeli siralama group");
+        System.out.println("Please enter the dimension of array: ");
+        int dimension = input.nextInt();
+        int[] array = new int[dimension];
+        System.out.println("Please enter the array elements: ");
+        for (int i = 0; i < dimension; i++) {
+            array[i] = input.nextInt();
         }
         System.out.println("Siralamadan once:");
-        for (int i : dizi) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.print("\n");
-        int n = dizi.length;
+        int n = array.length;
         for (int j = 1; j < n; j++) {
-            int key = dizi[j];
+            int key = array[j];
             int i = j - 1;
-            while ((i > -1) && (dizi[i] > key)) {
-                dizi[i + 1] = dizi[i];
+            while ((i > -1) && (array[i] > key)) {
+                array[i + 1] = array[i];
                 i--;
             }
-            dizi[i + 1] = key;
+            array[i + 1] = key;
         }
         System.out.println("Siralamadan sonra:");
-        for (int i : dizi) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
-    public void secmeliSiralama() {
+    public void The_2() {
         System.out.println("her adimda dizideki en kucuk sayinin nerede oldugu bulunur. Bu sayi ile dizinin basindaki sayi yer degistirilerek en kucuk sayilar secilerek basa atilmis olur.");
 
-        Scanner klavye = new Scanner(System.in);
-        System.out.println("Dizi boyutunu girin:");
-        int boyut = klavye.nextInt();
-        int[] dizi = new int[boyut];
-        System.out.println("Dizinin elemanlarini girin:");
-        for (int i = 0; i < boyut; i++) {
-            dizi[i] = klavye.nextInt();
+        System.out.println("Please enter the dimension of array: ");
+        int dimension = input.nextInt();
+        int[] array = new int[dimension];
+        System.out.println("Please enter the array elements: ");
+        for (int i = 0; i < dimension; i++) {
+            array[i] = input.nextInt();
         }
         System.out.println("Siralamadan once:");
-        for (int i : dizi) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();
-        for (int i = 0; i < dizi.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             int index = i;
-            for (int j = i + 1; j < dizi.length; j++) {
-                if (dizi[j] < dizi[index]) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j] < array[index]) {
                     index = j;//searching for lowest index
                 }
             }
-            int smallerNumber = dizi[index];
-            dizi[index] = dizi[i];
-            dizi[i] = smallerNumber;
+            int smallerNumber = array[index];
+            array[index] = array[i];
+            array[i] = smallerNumber;
         }
         System.out.println("Siralama sonrasi");
-        for (int i : dizi) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
-    public void bubbleSort() {
+    public void The_3() {
         System.out.println("Bubble Sort");
-        Scanner klavye = new Scanner(System.in);
-        System.out.println("Dizi boyutunu girin:");
-        int boyut = klavye.nextInt();
-        int[] dizi = new int[boyut];
-        System.out.println("Dizinin elemanlarini girin:");
-        for (int i = 0; i < boyut; i++) {
-            dizi[i] = klavye.nextInt();
+        System.out.println("Please enter the dimension of array: ");
+        int dimension = input.nextInt();
+        int[] array = new int[dimension];
+        System.out.println("Please enter the array elements: ");
+        for (int i = 0; i < dimension; i++) {
+            array[i] = input.nextInt();
         }
 
-        for (int i = 0; i < boyut - 1; i++) {
-            for (int j = 0; j < boyut - i - 1; j++) {
-                if (dizi[j] > dizi[j + 1]) {
+        for (int i = 0; i < dimension - 1; i++) {
+            for (int j = 0; j < dimension - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
                     // Swap arr[j] and arr[j+1]
-                    int temp = dizi[j];
-                    dizi[j] = dizi[j + 1];
-                    dizi[j + 1] = temp;
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
                 }
             }
         }
 
         System.out.println("Sıralama sonrası:");
-        for (int i : dizi) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -221,4 +226,68 @@ public class The2 {
 
     }
 
+    public void The_4() {
+
+
+    }
+
+    public void The_5() {
+
+
+    }
+
+    public void The_6(){
+        MergeSort_2_6.main();
+    }
+
+    public void The_7(){
+
+
+    }
+
+    public void The_8(){
+
+
+    }
+
+    public void The_9(){
+
+    MergeSort_2_6.main();
+
+    }
+
+    public void The_10(){
+
+        Taban_2_10.main();
+
+    }
+
+    public void The_11(){
+
+
+
+    }
+
+    public void The_12(){
+
+        public class RandomSortExample {
+            public static void main(String[] args) {
+                ArrayList<Integer> numbers = new ArrayList<>();
+                numbers.add(10);
+                numbers.add(20);
+                numbers.add(30);
+                numbers.add(40);
+                numbers.add(50);
+
+                System.out.println("Original list: " + numbers);
+
+                // Shuffle the list randomly
+                Collections.shuffle(numbers);
+
+                System.out.println("Shuffled list: " + numbers);
+            }
+        }
+
+
+    }
 }
