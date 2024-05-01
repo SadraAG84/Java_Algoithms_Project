@@ -46,7 +46,7 @@ public class StartMenu {
                     break;
                 case 2:
                     The2 siralama = new The2();
-                    siralama.The_2();
+                    siralama.S2_menu();
                     break;
                 case 3:
                     The3 arama = new The3();
