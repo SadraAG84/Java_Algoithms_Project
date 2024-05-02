@@ -1,5 +1,6 @@
 package Siralama_Algoritmalar;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -90,6 +91,7 @@ public class The2 {
             case 12:
                 // randomSort();
                 System.out.println("Rastgele Sıralama seçildi.");
+                The_12();
                 break;
             case 13:
                 // luckySort();
@@ -236,57 +238,59 @@ public class The2 {
 
     }
 
-    public void The_6(){
+    public void The_6() {
         MergeSort_2_6.main();
     }
 
-    public void The_7(){
+    public void The_7() {
 
 
     }
 
-    public void The_8(){
+    public void The_8() {
 
 
     }
 
-    public void The_9(){
+    public void The_9() {
 
-    MergeSort_2_6.main();
+        MergeSort_2_6.main();
 
     }
 
-    public void The_10(){
+    public void The_10() {
 
         Taban_2_10.main();
 
     }
 
-    public void The_11(){
-
+    public void The_11() {
 
 
     }
 
-    public void The_12(){
+    public void The_12() {
 
-        public class RandomSortExample {
-            public static void main(String[] args) {
-                ArrayList<Integer> numbers = new ArrayList<>();
-                numbers.add(10);
-                numbers.add(20);
-                numbers.add(30);
-                numbers.add(40);
-                numbers.add(50);
+        ArrayList<Integer> numbers = new ArrayList<>();
 
-                System.out.println("Original list: " + numbers);
 
-                // Shuffle the list randomly
-                Collections.shuffle(numbers);
+        System.out.println("How many number you want to add? ");
+        int count = input.nextInt();
 
-                System.out.println("Shuffled list: " + numbers);
-            }
+        for (int i = 1; i <= count; i++){
+
+            System.out.println("Please enter " + i + ". number: ");
+            int user_number = input.nextInt();
+            numbers.add(user_number);
+
         }
+
+        System.out.println("Original list: " + numbers);
+
+        // Shuffle the list randomly
+        Collections.shuffle(numbers);
+
+        System.out.println("Shuffled list: " + numbers);
 
 
     }

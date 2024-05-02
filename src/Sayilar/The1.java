@@ -362,7 +362,7 @@ public class The1 {
 
         for (int i = 0; i < the_number; i++) {
 
-            System.out.print(num1 + "\n");
+            System.out.print(num1 + " ");
 
             int num5 = num1 + num2 + num3 + num4;
             num1 = num2;
@@ -371,6 +371,7 @@ public class The1 {
             num4 = num5;
 
         }
+        System.out.println("\n");
     }
 
     public void The_13() {
