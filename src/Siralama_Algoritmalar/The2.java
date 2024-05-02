@@ -1,9 +1,9 @@
 package Siralama_Algoritmalar;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
-
 import static java.util.Arrays.sort;
 
 public class The2 {
@@ -96,10 +96,12 @@ public class The2 {
             case 13:
                 // luckySort();
                 System.out.println("Şanslı Sıralama seçildi.");
+                The_13();
                 break;
             case 14:
                 // stoogeSort();
                 System.out.println("Serseri Sıralama seçildi.");
+                The_14();
                 break;
             case 15:
                 // flashSort();
@@ -141,6 +143,7 @@ public class The2 {
         int[] array = new int[dimension];
         System.out.println("Please enter the array elements: ");
         for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
             array[i] = input.nextInt();
         }
         System.out.println("Siralamadan once:");
@@ -173,6 +176,7 @@ public class The2 {
         int[] array = new int[dimension];
         System.out.println("Please enter the array elements: ");
         for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
             array[i] = input.nextInt();
         }
         System.out.println("Siralamadan once:");
@@ -205,6 +209,7 @@ public class The2 {
         int[] array = new int[dimension];
         System.out.println("Please enter the array elements: ");
         for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
             array[i] = input.nextInt();
         }
 
@@ -292,6 +297,25 @@ public class The2 {
 
         System.out.println("Shuffled list: " + numbers);
 
+    }
+
+    public void The_13(){
+
+        System.out.println("Please enter the dimension of array: ");
+        int dimension = input.nextInt();
+        int[] array = new int[dimension];
+        System.out.println("Please enter the array elements: ");
+        for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
+            array[i] = input.nextInt();
+        }
+
+        System.out.println("The result is: " + Arrays.toString(array));
 
     }
+
+    public void The_14(){
+        StoogeSort_2_14.main();
+    }
+
 }

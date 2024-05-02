@@ -49,6 +49,7 @@ public class HeapSort_2_9 {
         int[] array = new int[dimension];
         System.out.println("Please enter the array elements: ");
         for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
             array[i] = input.nextInt();
         }
 
