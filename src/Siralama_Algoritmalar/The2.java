@@ -106,10 +106,12 @@ public class The2 {
             case 15:
                 // flashSort();
                 System.out.println("Şimşek Sıralama seçildi.");
+                The_15();
                 break;
             case 16:
                 // combSort();
                 System.out.println("Tarak Sıralama seçildi.");
+                The_16();
                 break;
             case 17:
                 // gnomeSort();
@@ -318,4 +320,24 @@ public class The2 {
         StoogeSort_2_14.main();
     }
 
+    public void The_15(){
+
+        FlashSort_2_15.main();
+
+    }
+
+    public void The_16(){
+
+        CombSort_2_16.main();
+
+    }
+
+    public void The_17(){
+
+        
+
+    }
+
 }
+
+
