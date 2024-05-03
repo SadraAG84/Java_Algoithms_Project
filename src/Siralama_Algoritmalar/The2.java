@@ -116,6 +116,7 @@ public class The2 {
             case 17:
                 // gnomeSort();
                 System.out.println("Gnome Sıralama seçildi.");
+                The_17();
                 break;
             case 18:
                 // permutationSort();
@@ -334,7 +335,7 @@ public class The2 {
 
     public void The_17(){
 
-        
+
 
     }
 

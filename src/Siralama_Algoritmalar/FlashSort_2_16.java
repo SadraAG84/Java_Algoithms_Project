@@ -1,13 +1,12 @@
 package Siralama_Algoritmalar;
 
-import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class CombSort_2_16 {
-    public static void main() {
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
         System.out.println("Please enter the dimension of array: ");
         int dimension = input.nextInt();
         int[] array = new int[dimension];
