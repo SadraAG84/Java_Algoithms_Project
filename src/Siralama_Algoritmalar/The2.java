@@ -90,6 +90,7 @@ public class The2 {
             case 11:
                 // shakerSort();
                 System.out.println("Sallama Sıralama seçildi.");
+                The_11();
                 break;
             case 12:
                 // randomSort();
@@ -281,6 +282,7 @@ public class The2 {
 
     public void The_11() {
 
+        ShakerSort_2_11.main();
 
     }
 
