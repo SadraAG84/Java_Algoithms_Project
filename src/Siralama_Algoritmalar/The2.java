@@ -59,6 +59,7 @@ public class The2 {
             case 5:
                 // shellSort();
                 System.out.println("Shell Sıralama seçildi.");
+                The_5();
                 break;
             case 6:
                 // mergeSort();
@@ -69,10 +70,12 @@ public class The2 {
             case 7:
                 // quickSort();
                 System.out.println("Hızlı Sıralama seçildi.");
+                The_7();
                 break;
             case 8:
                 // quickSort3();
                 System.out.println("Hızlı Sıralama3 seçildi.");
+                The_8();
                 break;
             case 9:
                 // heapSort();
@@ -243,20 +246,24 @@ public class The2 {
 
     public void The_5() {
 
+        ShellSort_2_5.main();
 
     }
 
     public void The_6() {
+
         MergeSort_2_6.main();
     }
 
     public void The_7() {
 
+        QuickSort_2_7.main();
 
     }
 
     public void The_8() {
 
+        QuickSort3_2_8.main();
 
     }
 
@@ -318,6 +325,7 @@ public class The2 {
     }
 
     public void The_14(){
+
         StoogeSort_2_14.main();
     }
 
@@ -329,7 +337,7 @@ public class The2 {
 
     public void The_16(){
 
-        CombSort_2_16.main();
+        CombSort_2_17.main();
 
     }
 
