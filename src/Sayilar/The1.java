@@ -130,6 +130,10 @@ public class The1 {
                 The_20();
                 break;
 
+            default:
+                System.out.println("Invalid selection. Please enter a number between 1 and 20.");
+                break;
+
         }
 
     }

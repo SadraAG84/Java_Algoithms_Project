@@ -145,7 +145,7 @@ public class The2 {
                 The_20();
                 break;
             default:
-                System.out.println("Geçersiz seçim. Lütfen 1 ile 20 arasında bir sayı girin.");
+                System.out.println("Invalid selection. Please enter a number between 1 and 20.");
                 break;
         }
     }

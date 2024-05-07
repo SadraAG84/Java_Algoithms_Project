@@ -50,7 +50,7 @@ public class StartMenu {
                     break;
                 case 3:
                     The3 arama = new The3();
-                    arama.The_3();
+                    arama.S3_menu();
                     break;
                 default:
                     System.out.println("You enter a wrong number.\nplease try again\n");
