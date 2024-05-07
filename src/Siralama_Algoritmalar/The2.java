@@ -142,6 +142,7 @@ public class The2 {
             case 20:
                 // bucketSort();
                 System.out.println("Kova Sıralama seçildi.");
+                The_20();
                 break;
             default:
                 System.out.println("Geçersiz seçim. Lütfen 1 ile 20 arasında bir sayı girin.");
@@ -367,6 +368,15 @@ public class The2 {
     public void The_19(){
 
         StrandSort_2_19.main();
+
+    }
+
+    public void The_20(){
+
+
+
+        KovaSort_2_20.main();
+//        bitmedi
 
     }
 
