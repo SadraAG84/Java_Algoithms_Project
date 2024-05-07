@@ -1,5 +1,7 @@
 package Siralama_Algoritmalar;
 
+import StartMenu.StartMenu;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -34,9 +36,14 @@ public class The2 {
         System.out.println("20 - Kova Sıralama (Bucket Sort)");
         System.out.println("Kullanmak istediğiniz sıralama algoritmasının numarasını girin:");
 
-        int choice = input.nextInt();
+        int choice1 = input.nextInt();
 
-        switch (choice) {
+        switch (choice1) {
+
+            case 99:
+                StartMenu back = new StartMenu();
+                back.startmenu();
+
             case 1:
                 // insertionSort();
                 System.out.println("Eklemeli Sıralama seçildi.");
@@ -125,10 +132,12 @@ public class The2 {
             case 18:
                 // permutationSort();
                 System.out.println("Permütasyon Sıralama seçildi.");
+                The_18();
                 break;
             case 19:
                 // strandSort();
                 System.out.println("Strand Sıralama seçildi.");
+                The_19();
                 break;
             case 20:
                 // bucketSort();
@@ -339,13 +348,25 @@ public class The2 {
 
     public void The_16(){
 
-        CombSort_2_17.main();
+        CombSort_2_16.main();
 
     }
 
     public void The_17(){
 
+        GnomeSort_2_17.main();
 
+    }
+
+    public void The_18(){
+
+        PermutasiyonSort_2_18.main();
+
+    }
+
+    public void The_19(){
+
+        StrandSort_2_19.main();
 
     }
 

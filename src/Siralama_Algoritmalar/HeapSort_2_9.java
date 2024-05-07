@@ -57,8 +57,9 @@ public class HeapSort_2_9 {
         int n = f_arr.length;
         HeapSort_2_9 ob = new HeapSort_2_9();
         ob.sort(f_arr);
-        System.out.println("Sorted array is");
+        System.out.println("The result: ");
         printArray(f_arr);
+        System.out.println("\n");
     }
 }
 

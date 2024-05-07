@@ -3,7 +3,8 @@ package Siralama_Algoritmalar;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ShellSort_2_5 {
+public class GnomeSort_2_17 {
+
     public static void main() {
 
 
@@ -18,30 +19,28 @@ public class ShellSort_2_5 {
         }
 
 
-        System.out.println("Before sorting: ");
-        System.out.println(Arrays.toString(array));
-
-        array = shellSort(array);
-
-        System.out.println("The result: ");
+        gnomeSort(array, array.length);
+        System.out.print("The result: ");
         System.out.println(Arrays.toString(array));
         System.out.println("\n");
     }
 
-    public static int[] shellSort(int[] array) {
-        int n = array.length;
-        for (int gap = n / 2; gap > 0; gap /= 2) {
-            for (int i = gap; i < n; i++) {
-                int temp = array[i];
-                int j = i;
-                while (j >= gap && array[j - gap] > temp) {
-                    array[j] = array[j - gap];
-                    j -= gap;
-                }
-                array[j] = temp;
+    static void gnomeSort(int arr[], int n) {
+        int index = 0;
+        while (index < n) {
+            if (index == 0)
+                index++;
+            if (arr[index] >= arr[index - 1])
+                index++;
+            else {
+                int temp = arr[index];
+                arr[index] = arr[index - 1];
+                arr[index - 1] = temp;
+                index--;
             }
         }
-        return array;
     }
+
+
 }
 

@@ -18,7 +18,7 @@ public class ShakerSort_2_11 {
         }
 
 
-        System.out.println("Sıralama Öncesi:");
+        System.out.println("Before sorting: ");
         for (int num : array) {
             System.out.print(num + " ");
         }
@@ -26,10 +26,11 @@ public class ShakerSort_2_11 {
 
         shakerSort(array);
 
-        System.out.println("Sıralama Sonrası:");
+        System.out.println("The result: ");
         for (int num : array) {
             System.out.print(num + " ");
         }
+        System.out.println("\n");
     }
 
 

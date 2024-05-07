@@ -3,7 +3,7 @@ package Siralama_Algoritmalar;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class CombSort_2_17 {
+public class CombSort_2_16 {
     public static void main() {
 
         Scanner input = new Scanner(System.in);

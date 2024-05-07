@@ -62,7 +62,7 @@ public class Taban_2_10 {
         int n = array.length;
         radixsort(array, n);
 
-        System.out.println("Sıralanmış dizi: ");
+        System.out.println("The result: ");
         for (int i = 0; i < n; i++) {
             System.out.print(array[i] + " ");
         }

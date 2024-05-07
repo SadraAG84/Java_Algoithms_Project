@@ -97,8 +97,9 @@ public class MergeSort_2_6 {
         MergeSort_2_6 ob = new MergeSort_2_6();
         ob.sort(f_arr, 0, f_arr.length - 1);
 
-        System.out.println("\nSorted array");
+        System.out.println("\nThe result: \n");
         printArray(f_arr);
+        System.out.println("\n");
     }
 
 

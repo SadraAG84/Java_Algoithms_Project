@@ -17,7 +17,8 @@ public class FlashSort_2_16 {
         }
 
         combSort(array);
-        System.out.println("Sıralanmış dizi: " + Arrays.toString(array));
+        System.out.println("The result: " + Arrays.toString(array));
+        System.out.println("\n");
     }
 
     public static void combSort(int[] arr) {

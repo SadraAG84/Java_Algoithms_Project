@@ -35,6 +35,7 @@ public class StoogeSort_2_14 {
 
         int n = array.length;
         stoogesort(array, 0, n - 1);
+        System.out.println("The result: ");
         for (int i = 0; i < n; i++){
             System.out.print(array[i] + " ");
         }
