@@ -59,6 +59,7 @@ public class The3 {
                 break;
 
             case 6:
+                The_6();
                 break;
 
             case 7:
@@ -104,7 +105,31 @@ public class The3 {
 
     public void The_2(){
 
-        
+
+
+    }
+
+    public void The_3(){
+
+
+
+    }
+
+    public void The_4(){
+
+
+
+    }
+
+    public void The_5(){
+
+
+
+    }
+
+    public void The_6(){
+
+        FloydWarshall_3_6.main();
 
     }
 

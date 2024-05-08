@@ -1,6 +1,6 @@
 package Arama_Algoritmalar;
 
-//import java.security.SecureRandom;
+
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
@@ -37,7 +37,6 @@ public class LenearSearch_3_1 {
 
         for (int i = 0; i < data.length; i++){
 
-//            data[i] = dimension + generator.nextInt(90);
 
         }
 
