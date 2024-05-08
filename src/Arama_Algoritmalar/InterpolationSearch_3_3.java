@@ -1,29 +1,38 @@
 package Arama_Algoritmalar;
-
-
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
-public class LenearSearch_3_1 {
 
-    public static int linearsearch(int data[], int searchkey) {
+public class InterpolationSearch_3_3 {
 
-        for (int index = 0; index < data.length; index ++){
+    public static int interpolationSearch(int[] data, int user_input) {
+        int left = 0;
+        int right = data.length - 1;
 
-            if (data[index] == searchkey) {
+//         && user_input >= data[left] && user_input <= data[right]
 
-                return index;
+        while (left <= right && user_input >= data[left] && user_input <= data[right]) {
+            // Hesaplanan orta değeri bulma
+            int mid = left + ((user_input - data[left]) * (right - left)) / (data[right] - data[left]);
 
+            if (data[mid] == user_input) {
+                return mid; // Aranan değer bulundu
             }
 
+            if (data[mid] < user_input) {
+                left = mid + 1; // Aranan değer daha sağda
+            } else {
+                right = mid - 1; // Aranan değer daha solda
+            }
         }
-        return -1;
 
+        return -1; // Aranan değer bulunamadı
     }
 
-    public static void main(){
+    public static void main() {
 
         Scanner input = new Scanner(System.in);
+
 
         System.out.println("Please enter the dimension of array: ");
         int dimension = input.nextInt();
@@ -39,6 +48,16 @@ public class LenearSearch_3_1 {
         System.out.println(Arrays.toString(data));
 
 
+//        System.out.println("Please enter the number you want to search for: ");
+//        int user_input = input.nextInt();
+
+//        int result = interpolationSearch(array, searchValue);
+
+//        if (result != -1) {
+//            System.out.println("Aranan değer " + user_input + " dizinin " + result + ". indisinde bulundu.");
+//        } else {
+//            System.out.println("Aranan değer bulunamadı.");
+//        }
 
 
         boolean finish = false;
@@ -57,7 +76,7 @@ public class LenearSearch_3_1 {
                 System.out.println("Please enter an integer value : ");
                 int user_input = input.nextInt();
 
-                int result = linearsearch(data, user_input);
+                int result = interpolationSearch(data, user_input);
 
                 if (result == -1){
 
@@ -78,9 +97,6 @@ public class LenearSearch_3_1 {
 
 
 
-
     }
-
-
-
 }
+

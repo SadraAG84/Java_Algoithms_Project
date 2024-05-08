@@ -50,6 +50,7 @@ public class The3 {
                 break;
 
             case 3:
+                The_3();
                 break;
 
             case 4:
@@ -111,7 +112,8 @@ public class The3 {
 
     public void The_3(){
 
-
+        InterpolationSearch_3_3.main();
+        //not finished
 
     }
 
@@ -130,6 +132,7 @@ public class The3 {
     public void The_6(){
 
         FloydWarshall_3_6.main();
+        //not finished
 
     }
 
