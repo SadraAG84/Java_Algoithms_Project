@@ -85,6 +85,7 @@ public class The3 {
                 break;
 
             case 14:
+                The_14();
                 break;
 
             case 15:
@@ -133,6 +134,12 @@ public class The3 {
 
         FloydWarshall_3_6.main();
         //not finished
+
+    }
+
+    public void The_14(){
+
+        HorspoolSearching_3_14.main();
 
     }
 
