@@ -72,6 +72,7 @@ public class The3 {
                 break;
 
             case 9:
+                The_9();
                 break;
 
             case 10:
@@ -136,6 +137,25 @@ public class The3 {
 
         FloydWarshall_3_6.main();
         //not finished
+
+    }
+
+    public void The_7(){
+
+
+
+    }
+
+    public void The_8(){
+
+
+
+    }
+
+    public void The_9(){
+
+        DijkstraAlgorithm_3_9.main();
+//        not_finished(have problerm)
 
     }
 
