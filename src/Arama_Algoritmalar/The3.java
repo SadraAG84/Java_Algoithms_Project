@@ -47,6 +47,7 @@ public class The3 {
                 break;
 
             case 2:
+                The_2();
                 break;
 
             case 3:
@@ -54,6 +55,7 @@ public class The3 {
                 break;
 
             case 4:
+                The_4();
                 break;
 
             case 5:
@@ -107,7 +109,7 @@ public class The3 {
 
     public void The_2(){
 
-
+        BinarySearch_3_2.main();
 
     }
 
@@ -120,7 +122,7 @@ public class The3 {
 
     public void The_4(){
 
-
+        SimpleSearch_3_4.main();
 
     }
 
