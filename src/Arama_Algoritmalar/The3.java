@@ -59,6 +59,7 @@ public class The3 {
                 break;
 
             case 5:
+                The_5();
                 break;
 
             case 6:
@@ -129,7 +130,8 @@ public class The3 {
 
     public void The_5(){
 
-
+        SabitMaliyetliSearching_3_5.main();
+//        not_finished
 
     }
 
@@ -159,9 +161,36 @@ public class The3 {
 
     }
 
+    public void The_10(){
+
+
+    }
+
+    public void The_11(){
+
+
+    }
+
+    public void The_12(){
+
+
+    }
+
+    public void The_13(){
+
+
+    }
+
+
+
     public void The_14(){
 
         HorspoolSearching_3_14.main();
+
+    }
+
+    public void The_15(){
+
 
     }
 
