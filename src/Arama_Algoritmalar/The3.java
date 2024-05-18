@@ -67,6 +67,7 @@ public class The3 {
                 break;
 
             case 7:
+                The_7();
                 break;
 
             case 8:
@@ -118,7 +119,7 @@ public class The3 {
     public void The_3(){
 
         InterpolationSearch_3_3.main();
-        //not finished
+
 
     }
 
@@ -138,13 +139,12 @@ public class The3 {
     public void The_6(){
 
         FloydWarshall_3_6.main();
-        //not finished
 
     }
 
     public void The_7(){
 
-
+        PrimAlgorithm_3_7.main();
 
     }
 
@@ -157,7 +157,7 @@ public class The3 {
     public void The_9(){
 
         DijkstraAlgorithm_3_9.main();
-//        not_finished(have problerm)
+
 
     }
 
