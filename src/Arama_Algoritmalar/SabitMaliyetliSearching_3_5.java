@@ -27,7 +27,7 @@ public class SabitMaliyetliSearching_3_5 {
             array[i] = input.nextInt();
         }
 
-        
+
 
 
         graph.put(1, Arrays.asList(new Node(2, 3), new Node(3, 5)));
