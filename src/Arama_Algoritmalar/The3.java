@@ -71,6 +71,7 @@ public class The3 {
                 break;
 
             case 8:
+                The_8();
                 break;
 
             case 9:
@@ -78,9 +79,11 @@ public class The3 {
                 break;
 
             case 10:
+                The_10();
                 break;
 
             case 11:
+                The_11();
                 break;
 
             case 12:
@@ -150,7 +153,7 @@ public class The3 {
 
     public void The_8(){
 
-
+        KruskalAlgorithm_3_8.main();
 
     }
 
@@ -163,11 +166,13 @@ public class The3 {
 
     public void The_10(){
 
+        BellmanFordAlgorithm_3_10.main();
 
     }
 
     public void The_11(){
 
+        BinarySearchTree_3_11.main();
 
     }
 
