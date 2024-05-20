@@ -459,7 +459,34 @@ public class The1 {
 
     public void The_18() {
 
-        System.out.println("404 not found!!\n");
+//        System.out.println("404 not found!!\n");
+        System.out.println("Please enter your number: ");
+        Scanner input = new Scanner(System.in);
+
+        /*Tav sayıları, her basamağın karesi sırasıyla birbirlerini takip eden sayılardır.
+        Örneğin, 1'in karesi 1, 1'in karesi 1'dir; 2'nin karesi 4, 4'ün karesi 16'dır; 3'ün karesi 9, 9'un karesi 81'dir; ve böyle devam eder.*/
+
+        //bu kod belirli aralıktaki tav sayıları yazdırır.
+        int range = input.nextInt();
+        System.out.println("Tav Sayılar: ");
+        for (int i = 1; i <= range; i++) {
+            int temp = i;
+            boolean isTav = true;
+            while (temp > 0) {
+                int digit = temp % 10;
+                if (digit * digit != i) {
+                    isTav = false;
+                    break;
+                }
+                temp /= 10;
+            }
+            if (isTav) {
+                System.out.println(i);
+            }
+        }
+
+
+
 
     }
 
