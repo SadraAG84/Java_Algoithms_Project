@@ -1,6 +1,7 @@
 package Sayilar;
 
 import StartMenu.StartMenu;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -484,8 +485,6 @@ public class The1 {
                 System.out.println(i);
             }
         }
-
-
 
 
     }

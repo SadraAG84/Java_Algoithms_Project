@@ -25,7 +25,6 @@ public class The3 {
         System.out.println("15) Kaba Kuvvet Metin Arama Algoritması (Brute Force Text Search, Linear Text Search");
 
 
-
         cases();
     }
 
@@ -110,96 +109,95 @@ public class The3 {
 
     }
 
-    public void The_1(){
+    public void The_1() {
 
         LenearSearch_3_1.main();
 
     }
 
-    public void The_2(){
+    public void The_2() {
 
         BinarySearch_3_2.main();
 
     }
 
-    public void The_3(){
+    public void The_3() {
 
         InterpolationSearch_3_3.main();
 
 
     }
 
-    public void The_4(){
+    public void The_4() {
 
         SimpleSearch_3_4.main();
 
     }
 
-    public void The_5(){
+    public void The_5() {
 
         SabitMaliyetliSearching_3_5.main();
 //        not_finished
 
     }
 
-    public void The_6(){
+    public void The_6() {
 
         FloydWarshall_3_6.main();
 
     }
 
-    public void The_7(){
+    public void The_7() {
 
         PrimAlgorithm_3_7.main();
 
     }
 
-    public void The_8(){
+    public void The_8() {
 
         KruskalAlgorithm_3_8.main();
 
     }
 
-    public void The_9(){
+    public void The_9() {
 
         DijkstraAlgorithm_3_9.main();
 
 
     }
 
-    public void The_10(){
+    public void The_10() {
 
         BellmanFordAlgorithm_3_10.main();
 
     }
 
-    public void The_11(){
+    public void The_11() {
 
         BinarySearchTree_3_11.main();
 
     }
 
-    public void The_12(){
+    public void The_12() {
 
         PruferDizilimi_3_12.main();
 
     }
 
-    public void The_13(){
+    public void The_13() {
 
         TextSearch_3_13.main();
 
     }
 
 
-
-    public void The_14(){
+    public void The_14() {
 
         HorspoolSearching_3_14.main();
 
     }
 
-    public void The_15(){
+    public void The_15() {
 
         BruteForceSearching_3_15.main();
 
