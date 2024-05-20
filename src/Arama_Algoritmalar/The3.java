@@ -87,9 +87,11 @@ public class The3 {
                 break;
 
             case 12:
+                The_12();
                 break;
 
             case 13:
+                The_13();
                 break;
 
             case 14:
@@ -97,6 +99,7 @@ public class The3 {
                 break;
 
             case 15:
+                The_15();
                 break;
 
             default:
@@ -178,11 +181,13 @@ public class The3 {
 
     public void The_12(){
 
+        PruferDizilimi_3_12.main();
 
     }
 
     public void The_13(){
 
+        TextSearch_3_13.main();
 
     }
 
@@ -196,6 +201,7 @@ public class The3 {
 
     public void The_15(){
 
+        BruteForceSearching_3_15.main();
 
     }
 
