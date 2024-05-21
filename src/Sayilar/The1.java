@@ -28,7 +28,7 @@ public class The1 {
         System.out.println("15) Mersanne Sayılar");
         System.out.println("16) Harshad Sayılar");
         System.out.println("17) Cyclic (Döngüsel Sayılar)");
-        System.out.println("18) Tav Sayılar");
+        System.out.println("18) Tau Sayılar");
         System.out.println("19) Bağdaşık Sayılar (Amicable)");
         System.out.println("20) 6174 sayısı");
 
@@ -461,30 +461,29 @@ public class The1 {
     public void The_18() {
 
 //        System.out.println("404 not found!!\n");
-        System.out.println("Please enter your number: ");
-        Scanner input = new Scanner(System.in);
-
-        /*Tav sayıları, her basamağın karesi sırasıyla birbirlerini takip eden sayılardır.
-        Örneğin, 1'in karesi 1, 1'in karesi 1'dir; 2'nin karesi 4, 4'ün karesi 16'dır; 3'ün karesi 9, 9'un karesi 81'dir; ve böyle devam eder.*/
-
-        //bu kod belirli aralıktaki tav sayıları yazdırır.
-        int range = input.nextInt();
-        System.out.println("Tav Sayılar: ");
-        for (int i = 1; i <= range; i++) {
-            int temp = i;
-            boolean isTav = true;
-            while (temp > 0) {
-                int digit = temp % 10;
-                if (digit * digit != i) {
-                    isTav = false;
-                    break;
-                }
-                temp /= 10;
-            }
-            if (isTav) {
-                System.out.println(i);
+        System.out.println("Please enter the number you wanna check: ");
+        int user_input = input.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= user_input / 2; i++) {
+            if (user_input % i == 0) {
+                sum += 1;
             }
         }
+        sum = sum + 1;
+
+//        double result = (double) sum / (sum - user_input);
+        int result = user_input % sum;
+        if (result == 0){
+
+            System.out.println("The number " + user_input + " is a Tau number.\n");
+
+        }
+        else {
+
+            System.out.println("The number " + user_input + " is not a Tau number.\n");
+
+        }
+
 
 
     }
