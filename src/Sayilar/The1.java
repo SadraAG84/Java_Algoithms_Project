@@ -473,17 +473,15 @@ public class The1 {
 
 //        double result = (double) sum / (sum - user_input);
         int result = user_input % sum;
-        if (result == 0){
+        if (result == 0) {
 
             System.out.println("The number " + user_input + " is a Tau number.\n");
 
-        }
-        else {
+        } else {
 
             System.out.println("The number " + user_input + " is not a Tau number.\n");
 
         }
-
 
 
     }
