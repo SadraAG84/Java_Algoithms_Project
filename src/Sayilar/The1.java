@@ -471,7 +471,6 @@ public class The1 {
         }
         sum = sum + 1;
 
-//        double result = (double) sum / (sum - user_input);
         int result = user_input % sum;
         if (result == 0) {
 
