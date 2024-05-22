@@ -60,6 +60,7 @@ public class The2 {
                 The_3();
                 break;
             case 4:
+                The_4();
                 // divideAndConquerSort();
                 System.out.println("Böl ve Ayıkla Algoritması seçildi.");
                 break;
@@ -252,6 +253,7 @@ public class The2 {
 
     public void The_4() {
 
+        Divid_ConquerSort_2_4.main();
 
     }
 
@@ -280,7 +282,7 @@ public class The2 {
 
     public void The_9() {
 
-        MergeSort_2_6.main();
+        HeapSort_2_9.main();
 
     }
 
