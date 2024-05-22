@@ -2,6 +2,7 @@ package Sayilar;
 
 import StartMenu.StartMenu;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -455,6 +456,25 @@ public class The1 {
 
     public void The_17() {
 
+
+
+        System.out.print("Please enter the number you wanna check: ");
+        String user_input = input.nextLine().trim();
+        BigInteger n = new BigInteger(user_input);
+        int len = user_input.length()+1;
+        String str = String.valueOf(len);
+        BigInteger n1 = new BigInteger(str);
+        StringBuilder buf = new StringBuilder();
+        for(int i = 0 ; i < (len-1); i++) {
+            buf.append('9');
+        }
+        BigInteger total = new BigInteger(buf.toString());
+        if(n.multiply(n1).equals(total)) {
+            System.out.println("It is a cyclic number.");
+        }
+        else {
+            System.out.println("Not a cyclic number.");
+        }
 
     }
 
