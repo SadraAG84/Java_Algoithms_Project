@@ -20,7 +20,7 @@ class QuickSort_2_7 {
 
 
         int n = array.length;
-        QuickSort_2_7 ob = new QuickSort_2_7();
+        Divid_ConquerSort_2_4 ob = new Divid_ConquerSort_2_4();
         ob.sort(array, 0, n - 1);
         System.out.println("Sıralanmış dizi:");
         printArray(array);
