@@ -26,7 +26,7 @@ class Divid_ConquerSort_2_4 {
         printArray(array);
     }
 
-    static int partition(int array[], int low, int high) {
+    static int partition(int[] array, int low, int high) {
         int pivot = array[high];
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -44,7 +44,7 @@ class Divid_ConquerSort_2_4 {
     }
 
     // Quick Sort'u uygulayan ana fonksiyon
-    void sort(int arr[], int low, int high) {
+    void sort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
             sort(arr, low, pi - 1);
@@ -53,7 +53,7 @@ class Divid_ConquerSort_2_4 {
     }
 
     // Diziyi ekrana yazdıran yardımcı fonksiyon
-    static void printArray(int arr[]) {
+    static void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
