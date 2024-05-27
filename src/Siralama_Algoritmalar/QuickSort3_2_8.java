@@ -29,7 +29,7 @@ class QuickSort3_2_8 {
 
 
     // Pivot elemanını doğru konumuna yerleştiren partition metodu
-    static int partition(int arr[], int low, int high) {
+    static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -47,7 +47,7 @@ class QuickSort3_2_8 {
     }
 
     // Quick Sort3'ü uygulayan ana fonksiyon
-    void sort(int arr[], int low, int high) {
+    void sort(int[] arr, int low, int high) {
         if (low < high) {
             // Pivot seçimini daha iyi yapmak için medyanı kullanıyoruz
             int medianIndex = (low + high) / 2;
@@ -64,7 +64,7 @@ class QuickSort3_2_8 {
     }
 
     // Diziyi ekrana yazdıran yardımcı fonksiyon
-    static void printArray(int arr[]) {
+    static void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
