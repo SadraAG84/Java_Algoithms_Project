@@ -9,20 +9,18 @@ public class SimpleSearch_3_4 {
         Scanner scanner = new Scanner(System.in);
 
         // Kullanıcıdan dizi boyutunu istiyoruz
-        System.out.println("Dizi boyutunu girin:");
-        int size = scanner.nextInt();
-
-        // Dizi boyutuna göre bir dizi oluşturuyoruz
-        int[] array = new int[size];
-
-        // Kullanıcıdan dizi elemanlarını alıyoruz
-        System.out.println("Dizi elemanlarını girin:");
-        for (int i = 0; i < size; i++) {
-            array[i] = scanner.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the dimension of array: ");
+        int dimension = input.nextInt();
+        int[] array = new int[dimension];
+        System.out.println("Please enter the array elements: ");
+        for (int i = 0; i < dimension; i++) {
+            System.out.println("Please enter the " + (i + 1) + ". number: ");
+            array[i] = input.nextInt();
         }
 
         // Kullanıcıdan aranacak sayıyı istiyoruz
-        System.out.println("Aranacak sayıyı girin:");
+        System.out.println("Please enter the number you wanna search for: ");
         int key = scanner.nextInt();
 
         // Arama fonksiyonumuzu çağırıyoruz
@@ -30,9 +28,9 @@ public class SimpleSearch_3_4 {
 
         // Sonucu kontrol edip, kullanıcıya bilgi veriyoruz
         if (result == -1) {
-            System.out.println("Sayı dizi içinde bulunamadı.");
+            System.out.println("The number you entered was not founded.");
         } else {
-            System.out.println("Sayı dizi içinde " + result + ". indexte bulundu.");
+            System.out.println("the number you entered is founded on " + result + ". index.");
         }
     }
 
