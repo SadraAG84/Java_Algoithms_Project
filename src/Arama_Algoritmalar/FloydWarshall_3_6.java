@@ -6,8 +6,8 @@ class FloydWarshall_3_6 {
     final static int INF = 9999, nV = 4;
 
     // Implementing floyd warshall algorithm
-    void floydWarshall(int graph[][]) {
-        int matrix[][] = new int[nV][nV];
+    void floydWarshall(int[][] graph) {
+        int[][] matrix = new int[nV][nV];
         int i, j, k;
 
         for (i = 0; i < nV; i++)
@@ -26,7 +26,7 @@ class FloydWarshall_3_6 {
         printMatrix(matrix);
     }
 
-    void printMatrix(int matrix[][]) {
+    void printMatrix(int[][] matrix) {
         for (int i = 0; i < nV; ++i) {
             for (int j = 0; j < nV; ++j) {
                 if (matrix[i][j] == INF)
