@@ -3,6 +3,7 @@ package Arama_Algoritmalar;
 // Binary Search Tree operations in Java
 
 class BinarySearchTree_3_11 {
+    // ikili arama agaci dugumu
     class Node {
         int key;
         Node left, right;
@@ -18,20 +19,20 @@ class BinarySearchTree_3_11 {
     BinarySearchTree_3_11() {
         root = null;
     }
-
+//
     void insert(int key) {
         root = insertKey(root, key);
     }
 
-    // Insert key in the tree
+    // agaca anahtar ekle
     Node insertKey(Node root, int key) {
-        // Return a new node if the tree is empty
+        // eger agac bossa yeni bir dugum olustur ve dondur
         if (root == null) {
             root = new Node(key);
             return root;
         }
 
-        // Traverse to the right place and insert the node
+        // anahtari dogru konuma yerlestir
         if (key < root.key)
             root.left = insertKey(root.left, key);
         else if (key > root.key)
@@ -39,12 +40,12 @@ class BinarySearchTree_3_11 {
 
         return root;
     }
-
+// artan sirada dolasma saglanir
     void inorder() {
         inorderRec(root);
     }
 
-    // Inorder Traversal
+    // artan sirada dolasmayai gerceklestiren yardimci fonksyon
     void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.left);
@@ -52,40 +53,40 @@ class BinarySearchTree_3_11 {
             inorderRec(root.right);
         }
     }
-
+// anahta silme
     void deleteKey(int key) {
         root = deleteRec(root, key);
     }
-
+// yardimci fonksyon
     Node deleteRec(Node root, int key) {
-        // Return if the tree is empty
+        // agac bossa dondur
         if (root == null)
             return root;
 
-        // Find the node to be deleted
+        // silinicek dugum bul
         if (key < root.key)
             root.left = deleteRec(root.left, key);
         else if (key > root.key)
             root.right = deleteRec(root.right, key);
         else {
-            // If the node is with only one child or no child
+            // eger dugum tek cocuklu veya cocuksuzsa
             if (root.left == null)
                 return root.right;
             else if (root.right == null)
                 return root.left;
 
-            // If the node has two children
-            // Place the inorder successor in position of the node to be deleted
+            // eger dugum iki cocougu varsa
+            // silinicek dugum yerine artan siradaki ardili
             root.key = minValue(root.right);
 
-            // Delete the inorder successor
+            // artan siradaki ardali sil
             root.right = deleteRec(root.right, root.key);
         }
 
         return root;
     }
 
-    // Find the inorder successor
+    // artan sirada ardili bul
     int minValue(Node root) {
         int minv = root.key;
         while (root.left != null) {
@@ -95,7 +96,7 @@ class BinarySearchTree_3_11 {
         return minv;
     }
 
-    // Driver Program to test above functions
+
     public static void main() {
         BinarySearchTree_3_11 tree = new BinarySearchTree_3_11();
 
