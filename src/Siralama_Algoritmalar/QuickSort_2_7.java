@@ -26,7 +26,7 @@ class QuickSort_2_7 {
         printArray(array);
     }
 
-    static int partition(int[] array, int low, int high) {
+    static int partition(int array[], int low, int high) {
         int pivot = array[high];
         int i = (low - 1);
         for (int j = low; j < high; j++) {
