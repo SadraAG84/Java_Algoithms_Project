@@ -30,7 +30,7 @@ class KruskalAlgorithm_3_8 {
             edge[i] = new Edge_3_8();
     }
 
-    int find(subset subsets[], int i) {
+    int find(subset[] subsets, int i) {
         if (subsets[i].parent != i)
             subsets[i].parent = find(subsets, subsets[i].parent);
         return subsets[i].parent;
