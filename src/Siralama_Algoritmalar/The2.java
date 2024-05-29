@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
-
 import static java.util.Arrays.sort;
 
 public class The2 {
@@ -301,11 +300,30 @@ public class The2 {
 
     public void The_12() {
 
-        PermutasiyonSort_2_18.main();
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+
+        System.out.println("How many number you want to add? ");
+        int count = input.nextInt();
+
+        for (int i = 1; i <= count; i++){
+
+            System.out.println("Please enter " + i + ". number: ");
+            int user_number = input.nextInt();
+            numbers.add(user_number);
+
+        }
+
+        System.out.println("Original list: " + numbers);
+
+        // Shuffle the list randomly
+        Collections.shuffle(numbers);
+
+        System.out.println("Shuffled list: " + numbers);
 
     }
 
-    public void The_13() {
+    public void The_13(){
 
         System.out.println("Please enter the dimension of array: ");
         int dimension = input.nextInt();
@@ -320,42 +338,43 @@ public class The2 {
 
     }
 
-    public void The_14() {
+    public void The_14(){
 
         StoogeSort_2_14.main();
     }
 
-    public void The_15() {
+    public void The_15(){
 
         FlashSort_2_15.main();
 
     }
 
-    public void The_16() {
+    public void The_16(){
 
         CombSort_2_16.main();
 
     }
 
-    public void The_17() {
+    public void The_17(){
 
         GnomeSort_2_17.main();
 
     }
 
-    public void The_18() {
+    public void The_18(){
 
         PermutasiyonSort_2_18.main();
 
     }
 
-    public void The_19() {
+    public void The_19(){
 
         StrandSort_2_19.main();
 
     }
 
-    public void The_20() {
+    public void The_20(){
+
 
 
         KovaSort_2_20.main();
